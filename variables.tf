@@ -30,6 +30,11 @@ variable "admin_username" {
   type        = string
 }
 
+variable "default_password" {
+  description = "The default password of the virtual machine"
+  type        = string
+}
+
 variable "tags" {
   description = "A mapping of tags to assign to the virtual machine"
   type        = map(string)

@@ -36,10 +36,11 @@ resource "azurerm_linux_virtual_machine" "vm" {
   location            = azurerm_resource_group.rg.location
   size                = var.vm_size
   admin_username      = var.admin_username
+  admin_password = var.default_password
   network_interface_ids = [
     azurerm_network_interface.nic.id,
   ]
-  
+
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
