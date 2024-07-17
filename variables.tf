@@ -42,6 +42,6 @@ variable "tags" {
   description = "A mapping of tags to assign to the virtual machine"
   type        = map(string)
   default = {
-    environment = "testing"
+    application = "app1"
   }
 }
