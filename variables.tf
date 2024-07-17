@@ -12,7 +12,7 @@ variable "location" {
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
-  default = "mfugresourcegroup"
+  default = "APP1-RG"
 }
 
 variable "vm_size" {
@@ -29,7 +29,7 @@ variable "vm_size" {
 variable "admin_username" {
   description = "The admin username of the virtual machine"
   type        = string
-  default = "mfug-user"
+  default = "app1-admin"
 }
 
 variable "default_password" {
