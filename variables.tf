@@ -1,7 +1,7 @@
 variable "vm_name" {
   description = "The name of the virtual machine"
   type        = string
-
+  default = "vmtesting"
 }
 
 variable "location" {
@@ -13,11 +13,13 @@ variable "location" {
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
+  default = "mytfresourcegroup"
 }
 
 variable "vm_size" {
   description = "The size of the virtual machine"
   type        = string
+  default = "Standard_D2s_v3"
 
   validation {
     condition     = contains(["Standard_D2s_v3", "Standard_D4s_v3", "Standard_E2s_v3"], var.vm_size)
@@ -40,4 +42,7 @@ variable "default_password" {
 variable "tags" {
   description = "A mapping of tags to assign to the virtual machine"
   type        = map(string)
+  default = {
+    environment = "testing"
+  }
 }
