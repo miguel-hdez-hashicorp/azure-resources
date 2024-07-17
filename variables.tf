@@ -28,11 +28,13 @@ variable "vm_size" {
 variable "admin_username" {
   description = "The admin username of the virtual machine"
   type        = string
+  default = "testtinguser"
 }
 
 variable "default_password" {
   description = "The default password of the virtual machine"
   type        = string
+  default = "Admin1234!"
 }
 
 variable "tags" {
