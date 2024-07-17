@@ -1,4 +1,4 @@
-variable "vm_name" {
+variable "VM_NAME" {
   description = "The name of the virtual machine"
   type        = string
 }
