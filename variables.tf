@@ -1,7 +1,6 @@
 variable "vm_name" {
   description = "The name of the virtual machine"
   type        = string
-  default = "vmtesting"
 }
 
 variable "location" {
@@ -13,7 +12,7 @@ variable "location" {
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
-  default = "mytfresourcegroup"
+  default = "mfugresourcegroup"
 }
 
 variable "vm_size" {
@@ -30,13 +29,13 @@ variable "vm_size" {
 variable "admin_username" {
   description = "The admin username of the virtual machine"
   type        = string
-  
+  default = "mfug-user"
 }
 
 variable "default_password" {
   description = "The default password of the virtual machine"
   type        = string
-  
+  default = "Admin123!"
 }
 
 variable "tags" {
